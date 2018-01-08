@@ -1,0 +1,20 @@
+p {
+    text-align: center;
+    font-size: 16px;
+    padding: 50px;
+    margin-top: 30px;
+}
+
+span{
+    font-weight: bolder;
+    color: lightslategray;
+}
+
+h1 {
+    text-align: center;
+}
+
+code {
+    padding: 0;
+    margin-top: 8%;
+}

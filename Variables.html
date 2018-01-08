@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JS Tutorial [Variables]</title>
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="lib/highlight/styles/monokai-sublime.css" type="text/css">
+</head>
+
+<body>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="Variables.html">Variables</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Conditionals.html">Conditionals</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Functions.html">Functions</a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="Loops.html">Loops</a>
+        </li>
+    </ul>
+    <h1>Variables</h1>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+            <p> These are the normal types of variable declaration. In javascript you can declare with
+                <span>var</span> and
+                <span>let</span>. In EcmaScript6 let was introduced which lives in the block scope vs the var that lives in the
+                function scope.</p>
+        </div>
+        <div class="col-md-5">
+                <!-- <script src="https://gist.github.com/Drakso/9a6e0c687a605094d8c7cf2af9213cf7.js" data-gist-hide-footer="true"></script> -->
+                <pre><code class="snip JavaScript" data-id="9a6e0c687a605094d8c7cf2af9213cf7"></code></pre>
+                
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="row"></div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+            <p> Variables can be declared but not initialized. In that case the variable holds an
+                <span>undefined</span> value and type. Variables can also be initialized with operations or other variables.</p>
+        </div>
+        <div class="col-md-5">
+                <!-- <script src="https://gist.github.com/Drakso/2308bc0899f3b46eed09456867c982a8.js"></script> -->
+                <pre><code class="snip JavaScript" data-id="2308bc0899f3b46eed09456867c982a8"></code></pre>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="row"></div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+            <p> Declaration in <span>multiple rows</span> is done with
+                <span>` `</span> and it is very usefull for writing HTML code in JavaScript</p>
+        </div>
+        <div class="col-md-5">
+                <!-- <script src="https://gist.github.com/Drakso/a2d39a41ef052f7e9ec5e7cbaca9df35.js"></script> -->
+                <pre><code class="snip JavaScript" data-id="a2d39a41ef052f7e9ec5e7cbaca9df35"></code></pre>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="row"></div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+            <p> <span>Multiple variables</span> can be initialized just by separating them with a <span>,</span> </p>
+        </div>
+        <div class="col-md-5">
+                <!-- <script src="https://gist.github.com/Drakso/3cc52e5a424abfe04fa6e6479a8b262d.js"></script> -->
+                <pre><code class="snip JavaScript" data-id="3cc52e5a424abfe04fa6e6479a8b262d"></code></pre>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="row"></div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+            <p> If we redeclare a variable with the keyword <span>var</span>, it will not lose its value. For <span>let</span> that is not the case. Also in javascript, initialization goes from <span>left to right</span>( meaning operation on the left are executed first and on the right last ) </p>
+        </div>
+        <div class="col-md-5">
+                <!-- <script src="https://gist.github.com/Drakso/cbfa7b975f88d979f99be2d0999a4b44.js"></script> -->
+                <pre><code class="snip JavaScript" data-id="cbfa7b975f88d979f99be2d0999a4b44"></code></pre>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="row"></div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+            <p> Variables in javascript can handle all types even if they are combined. It handles that by turning everything into a <span>string</span>. </p>
+        </div>
+        <div class="col-md-5">
+                <!-- <script src="https://gist.github.com/Drakso/a44668eba97b0af08ea7e28b382f9f78.js"></script> -->
+                <pre><code class="snip JavaScript" data-id="a44668eba97b0af08ea7e28b382f9f78"></code></pre>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="row"></div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+            <p> Javascript variables are <span>dynamic</span>, meaning that if you declare a number to a variable, making that variable with type number, you can reinitialize it with a string with no problems.</p>
+        </div>
+        <div class="col-md-5">
+                <!-- <script src="https://gist.github.com/Drakso/f3b75e6298d97168f6bd5b20338405d0.js"></script> -->
+                <pre><code class="snip JavaScript" data-id="f3b75e6298d97168f6bd5b20338405d0"></code></pre>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="row"></div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+            <p> In javascript you can keep <span>function in a variable</span>. Then you can call the variable like its a function, and it will execute the function in it and return the value that the function returns.</p>
+        </div>
+        <div class="col-md-5">
+                <!-- <script src="https://gist.github.com/Drakso/e9417d15d5ca35ecf73e458ffe04da39.js"></script> -->
+                <pre><code class="snip JavaScript" data-id="e9417d15d5ca35ecf73e458ffe04da39"></code></pre>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="lib/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
