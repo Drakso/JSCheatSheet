@@ -5,13 +5,22 @@
     margin-top: 30px;
 }
 
+.whatBlock{
+    box-shadow: 1px 1px 5px #bdc3c7;
+    margin: 30px 0;
+    padding: 30px;
+}
+
 .textBlock p span {
     font-weight: bold;
-    color: blue;
+    color: #8e44ad;
 }
 
 .mainTitle {
     text-align: center;
+    margin: 30px 0 60px 0;
+    text-transform: uppercase;
+    color: #8e44ad;
 }
 
 code {
@@ -57,7 +66,6 @@ a:focus {
     margin-bottom: 40px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
     z-index: 901;
-    height: 10vh;
     width: 100%;
     position: fixed;
 }
@@ -66,6 +74,11 @@ a:focus {
     box-shadow: none;
     outline: none !important;
     border: none;
+    background-color: #2c3e50 !important;
+}
+
+.navbar-btn img{
+    width: 24px;
 }
 
 .line {
@@ -73,6 +86,14 @@ a:focus {
     height: 1px;
     border-bottom: 1px dashed #ddd;
     margin: 40px 0;
+}
+
+.navbar-header{
+    margin-left: 10px;
+}
+
+.navbar-light{
+    background-color: #ecf0f1;
 }
 
 
@@ -87,7 +108,7 @@ a:focus {
     left: 0;
     height: 100vh;
     z-index: 900;
-    background: #7386D5;
+    background: #34495e;
     color: #fff;
     transition: all 0.3s;
 }
@@ -97,8 +118,8 @@ a:focus {
 }
 
 #sidebar .sidebar-header {
-    padding: 20px;
-    background: #6d7fcc;
+    padding: 28px 20px 20px 20px;
+    background: #2c3e50;
 }
 
 #sidebar ul.components {
@@ -118,14 +139,14 @@ a:focus {
 }
 
 #sidebar ul li a:hover {
-    color: #7386D5;
+    color: #34495e;
     background: #fff;
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: #6d7fcc;
+    background: #2c3e50;
 }
 
 a[data-toggle="collapse"] {
@@ -144,7 +165,7 @@ a[aria-expanded="true"]::before {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background: #2c3e50;
 }
 
 ul.CTAs {
@@ -161,12 +182,12 @@ ul.CTAs a {
 
 a.download {
     background: #fff;
-    color: #7386D5;
+    color: #34495e;
 }
 
 a.article,
 a.article:hover {
-    background: #6d7fcc !important;
+    background: #2c3e50 !important;
     color: #fff !important;
 }
 
