@@ -43,6 +43,13 @@ code {
     margin: 0 auto !important;
     position: relative;
 }
+
+#introImage{
+    vertical-align: middle;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+}
 /*
     SCROLLBAR
 */
