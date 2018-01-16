@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JS Tutorial [Dom]</title>
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="lib/highlight/styles/atom-one-dark.css" type="text/css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light">
+        <div class="navbar-header">
+            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                <img src="icons/menu.svg" alt="Menu">
+            </button>
+        </div>
+    </nav>
+
+    <!-- Sidebar Holder -->
+    <nav id="sidebar" class="active">
+        <div class="sidebar-header">
+            <h3>JSWhat <a id="indexIcon" href="https://github.com/Drakso/JSWhat"><img src="icons/github.svg" alt="Gist Link"></a></h3>
+        </div>
+
+        <ul class="list-unstyled components">
+            <li>
+                <a href="Variables.html">Variables</a>
+            </li>
+            <li>
+                <a href="Conditionals.html">Conditionals</a>
+            </li>
+            <li>
+                <a href="Functions.html">Functions</a>
+            </li>
+            <li>
+                <a href="Arrays.html">Arrays</a>
+            </li>
+            <li>
+                <a href="Loops.html">Loops</a>
+            </li>
+            <li class="active">
+                <a href="DOM.html">Dom Manipulation</a>
+            </li>
+        </ul>
+
+        <!-- <ul class="list-unstyled CTAs">
+            <li>
+                <a href="" class="download">About</a>
+            </li>
+            <li>
+                <a href="" class="download">Contact</a>
+            </li>
+        </ul> -->
+    </nav>
+
+    <div class="container">
+        <!-- Page Content -->
+        <div class="wrapper">
+            <h1 class="mainTitle">DOM Manipulation</h1>
+            <div class="d-flex align-items-center whatBlock">
+                <div class="col-md-6 textBlock">
+                    <p> Selectors are a very important part in javascript. They connect our javascript code with the HTML elements. The most commonly used selectors are by id, class and tag name. The selector by id returns an element while the selectors by class and tag name return collection of elements so you have to treat it like an array and use loops to find a certain element or change them all.</p>
+                    <a href="https://gist.github.com/Drakso/f2e219bb9390b00713f360ffd9692d23">
+                        <img src="icons/github.svg" alt="Gist Link">
+                    </a>
+                </div>
+                <div class="col-md-6 codeBlock">
+                    <pre><code class="snip HTML" data-id="f2e219bb9390b00713f360ffd9692d23"></code></pre>
+                </div>
+            </div>
+            <div class="row whatBlock">
+                <div class="col-md-6 textBlock">
+                    <p> Query selectors are introduced later than the id, class and tag name selectors. They can select any element just like the css selectors. . is for classes, # is for id and you type only text if you want to select a tag name. JQuery selectors work in a similar way. </p>
+                    <a href="https://gist.github.com/Drakso/cc1120da9f6b65453f8ae0da57406ce4">
+                        <img src="icons/github.svg" alt="Gist Link">
+                    </a>
+                </div>
+                <div class="col-md-6 codeBlock">
+                    <pre><code class="snip HTML" data-id="cc1120da9f6b65453f8ae0da57406ce4"></code></pre>
+                </div>
+            </div>
+            <div class="row whatBlock">
+                <div class="col-md-6 textBlock">
+                    <p> An event listener is a function that waits for the user to interact in some way with an element or object. In the example, by clicking the button an event is trigerd on the click and an alert is shown on the screen. </p>
+                    <a href="https://gist.github.com/Drakso/a66fb42e0ece088a9ab3f7cec782b4de">
+                        <img src="icons/github.svg" alt="Gist Link">
+                    </a>
+                </div>
+                <div class="col-md-6 codeBlock">
+                    <pre><code class="snip HTML" data-id="a66fb42e0ece088a9ab3f7cec782b4de"></code></pre>
+                </div>
+            </div>
+            <div class="row whatBlock">
+                <div class="col-md-6 textBlock">
+                    <p> JQuery event listeners do the same function as the pure javascript one. There are two types of jquery event listeners. The difference between the two is only in the conventions. </p>
+                    <a href="https://gist.github.com/Drakso/5a25fb20e917e761faa9079a94633f83">
+                        <img src="icons/github.svg" alt="Gist Link">
+                    </a>
+                </div>
+                <div class="col-md-6 codeBlock">
+                    <pre><code class="snip HTML" data-id="5a25fb20e917e761faa9079a94633f83"></code></pre>
+                </div>
+            </div>
+            <div class="row whatBlock">
+                <div class="col-md-6 textBlock">
+                    <p> With the selectors, we can read value from elements such as the input element and use that value in our code. We use the element object property .value. </p>
+                    <a href="https://gist.github.com/Drakso/469cc800eeee91ca19fbdd0a49bcb86e">
+                        <img src="icons/github.svg" alt="Gist Link">
+                    </a>
+                </div>
+                <div class="col-md-6 codeBlock">
+                    <pre><code class="snip HTML" data-id="469cc800eeee91ca19fbdd0a49bcb86e"></code></pre>
+                </div>
+            </div>
+            <div class="row whatBlock">
+                <div class="col-md-6 textBlock">
+                    <p> An important way of manipulation the DOM is by changing the contents of elements. This is done with the element object property .innerHTML. To clear an element just set the .innerHTML to an empty string "". </p>
+                    <a href="https://gist.github.com/Drakso/62c6b1e74cab996889218fc7585341bf">
+                        <img src="icons/github.svg" alt="Gist Link">
+                    </a>
+                </div>
+                <div class="col-md-6 codeBlock">
+                    <pre><code class="snip HTML" data-id="62c6b1e74cab996889218fc7585341bf"></code></pre>
+                </div>
+            </div>
+            <div class="row whatBlock">
+                <div class="col-md-6 textBlock">
+                    <p> Css style can also be changed through javascript. All you have to do is select an element and access that element object property .style like in the example. </p>
+                    <a href="https://gist.github.com/Drakso/128a3ce3e10d263d2beaec07bcec0996">
+                        <img src="icons/github.svg" alt="Gist Link">
+                    </a>
+                </div>
+                <div class="col-md-6 codeBlock">
+                    <pre><code class="snip HTML" data-id="128a3ce3e10d263d2beaec07bcec0996"></code></pre>
+                </div>
+            </div>
+            <div class="row whatBlock">
+                <div class="col-md-6 textBlock">
+                    <p> Adding or removing css classes from elements is also possible. The element object property .classList with the properties .add and .remove can add or remove element css classes. This is usefull for hiding elements at will, like the example shows. </p>
+                    <a href="https://gist.github.com/Drakso/e0f4dd5fe19a29b0ea0931ce2ac2ba4f">
+                        <img src="icons/github.svg" alt="Gist Link">
+                    </a>
+                </div>
+                <div class="col-md-6 codeBlock">
+                    <pre><pre><code class="snip HTML" data-id="e0f4dd5fe19a29b0ea0931ce2ac2ba4f"></code></pre></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="lib/highlight/highlight.pack.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <script type="text/javascript" src="script.js"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>

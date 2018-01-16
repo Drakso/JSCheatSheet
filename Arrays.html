@@ -26,7 +26,7 @@
     <!-- Sidebar Holder -->
     <nav id="sidebar" class="active">
         <div class="sidebar-header">
-            <h3>JSWhat</h3>
+            <h3>JSWhat <a id="indexIcon" href="https://github.com/Drakso/JSWhat"><img src="icons/github.svg" alt="Gist Link"></a></h3>
         </div>
 
         <ul class="list-unstyled components">
@@ -45,16 +45,19 @@
             <li>
                 <a href="Loops.html">Loops</a>
             </li>
+            <li>
+                <a href="DOM.html">Dom Manipulation</a>
+            </li>
         </ul>
 
-        <ul class="list-unstyled CTAs">
+        <!-- <ul class="list-unstyled CTAs">
             <li>
                 <a href="" class="download">About</a>
             </li>
             <li>
                 <a href="" class="download">Contact</a>
             </li>
-        </ul>
+        </ul> -->
     </nav>
 <div class="container">
     <!-- Page Content -->
@@ -62,65 +65,83 @@
         <h1 class="mainTitle">Arrays</h1>
         <div class="row whatBlock">
             <div class="col-md-6 textBlock">
-                <p> A simple
-                    <span>if conditional</span> in javascript. It checks if the condition in the () are true and if so, it executes
-                    the code block inside the {}</p>
+                <p> An array is a collection of items. You can put variables, numbers, strings, objects and even functions. Arrays are declared with the <span>[ ]</span>  brackets. Arrays have properties that help us manipulate with them. Properties are accessed by adding a <span>.</span> next to the name of the array. The most common and useful property is the <span>lengt</span> property.  </p>
+                <a href="https://gist.github.com/Drakso/"><img src="icons/github.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
-                <pre><code class="snip JavaScript" data-id="3b41cf511ecf963d795568b9b15e7625"></code></pre>
+                <pre><code class="snip JavaScript" data-id="ba36d3b3fe5b4858e7631864e0f5e189"></code></pre>
             </div>
         </div>
         <div class="d-flex align-items-center whatBlock">
             <div class="col-md-6 textBlock">
-                <p> A simple
-                    <span>if/else</span> conditional in javascript. If the condition in the
-                    <span>if</span> statement is not true than the block of code in
-                    <span>else</span> is executed. </p>
+                <p> Elements are called by adding the index of the element in a <span>[ ]</span>  brackets. Element indexes are starting from 0 so the first index will always be index 0. Elements can be rewritten at any time with new data. If we skip some indexes while declaring a new element, the skipped indexes will have a value of <span> undefined </span>.</p>
+                <a href="https://gist.github.com/Drakso/8f04cb0c91b9dd27990a4795982d2519"><img src="icons/github.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
-                <pre><code class="snip JavaScript" data-id="9673723d54eb97b17227fe3d276fd408"></code></pre>
+                <pre><code class="snip JavaScript" data-id="8f04cb0c91b9dd27990a4795982d2519"></code></pre>
             </div>
         </div>
         <div class="row whatBlock">
             <div class="col-md-6 textBlock">
-                <p> If conditional can execute the code block if there is
-                    <span>operation</span> in the () and its true. Everything that is not true such as
-                    <span>undefined</span> or
-                    <span>null</span> executes the else code block.</p>
+                <p> Adding and removing items at the end of an array is done with the array properties <span>push</span> and <span>pop</span>. Simply type push and the item you want to add at the end of the array in <span>( )</span> brackets or pop and empty <span>( )</span> brackets to remove the last item from an array.</p>
+                    <a href="https://gist.github.com/Drakso/fba12a0cf9e876c748ba920adf03f6a2"><img src="icons/github.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
-                <pre><code class="snip JavaScript" data-id="c919331b92696a1f6aebd505f6270d55"></code></pre>
+                <pre><code class="snip JavaScript" data-id="fba12a0cf9e876c748ba920adf03f6a2"></code></pre>
             </div>
         </div>
         <div class="row whatBlock">
             <div class="col-md-6 textBlock">
-                <p>
-                    <span>if/else if</span> statemets are used if there are more conditions dependent on eachother. When the first
-                    if conditional is not true it goes to the next and so on until one is true or it hits the else. Note
-                    that
-                    <span>if two if conditions are true, only the first one will execute</span> its codeblock. The others after
-                    that are skipped. </p>
+                <p>Adding and removing items at the start of an array is done with the array properties <span>unshift</span> and <span>shift</span>. Simply type unshift and the item you want to add at the beginning of the array in <span>( )</span> brackets or shift and empty <span>( )</span> brackets to remove the first item from an array.</p>
+                    <a href="https://gist.github.com/Drakso/e3e2fc9b1122f8ba0c82e66ae97a9335"><img src="icons/github.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
-                <pre><code class="snip JavaScript" data-id="1b0f4c86d9f5832927f6e2dec13a6cc9"></code></pre>
+                <pre><code class="snip JavaScript" data-id="e3e2fc9b1122f8ba0c82e66ae97a9335"></code></pre>
             </div>
         </div>
         <div class="row whatBlock">
             <div class="col-md-6 textBlock">
-                <p> There can be if statements inside of other if statements. </p>
+                <p> Filtering an array is done with the array properties <span>filter</span> and <span>find</span>. Both of them check the items in the array by a criteria added in a <span>callback function</span> in ( ) brackets. Find returns all the items that passed the criteria in a new array, while find only returns the first item that meets the criteria and does not check the rest.  </p>
+                <a href="https://gist.github.com/Drakso/0499e9ccf5c1e62dce050b675097f35d"><img src="icons/github.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
-                <pre><code class="snip JavaScript" data-id="a4150db2aa5fefb47ba2f852b58a5014"></code></pre>
+                <pre><code class="snip JavaScript" data-id="0499e9ccf5c1e62dce050b675097f35d"></code></pre>
             </div>
         </div>
         <div class="row whatBlock">
             <div class="col-md-6 textBlock">
-                <p> A
-                    <span>function</span> can also be set as a condition for an if statement. The function return value will be
-                    used as the condition.</p>
+                <p> Running a particular function for every element is also possible with the <span>forEach</span> and <span>map</span> method. forEach runs a function using every element and does not return a new array as a result. map on the other hand runs a function on every element and returns a new array with the altered elements by the function.</p>
+                    <a href="https://gist.github.com/Drakso/c465e2f26427a1af0c80e63a3bb4054f"><img src="icons/github.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
-                <pre><code class="snip JavaScript" data-id="cf981cecab75336cd4c8af64a6ff8286"></code></pre>
+                <pre><code class="snip JavaScript" data-id="c465e2f26427a1af0c80e63a3bb4054f"></code></pre>
+            </div>
+        </div>
+        <div class="row whatBlock">
+            <div class="col-md-6 textBlock">
+                <p> Finding indexes of certain items can be achieved with the array properties<span> findIndex</span> and <span>indexOf</span>. findIndex needs a callback function to test the items in the array. As soon as it finds an item that passes the criteria it stops and returns its index. indexOf needs an item so it can match it with the elements in the array. When it finds a match it stops and returns the index. A second argument can be passed, a number, which represents the starting point of the search for a match.</p>
+                    <a href="https://gist.github.com/Drakso/1014f76226bf801b526b14edebbb6cf5"><img src="icons/github.svg" alt="Gist Link"></a>
+            </div>
+            <div class="col-md-6 codeBlock">
+                <pre><code class="snip JavaScript" data-id="1014f76226bf801b526b14edebbb6cf5"></code></pre>
+            </div>
+        </div>
+        <div class="row whatBlock">
+            <div class="col-md-6 textBlock">
+                <p> An array property called <span>join</span> is used if there is a need for an array to be converted in to a string of its elements. If an argument is passed to the join property, that character or string will be the separator between the elements in the string. Default is <span>,</span>. Reversing an array is also possible with the array property <span>reverse</span>, which reverses the elements in the array (Reverses the array, does not create a new array with reverse items). </p>
+                    <a href="https://gist.github.com/Drakso/bf6917f02d35fd9627c7653d26838f65"><img src="icons/github.svg" alt="Gist Link"></a>
+            </div>
+            <div class="col-md-6 codeBlock">
+                <pre><code class="snip JavaScript" data-id="bf6917f02d35fd9627c7653d26838f65"></code></pre>
+            </div>
+        </div>
+        <div class="row whatBlock">
+            <div class="col-md-6 textBlock">
+                <p> Selecting a range of items from an array is done with the array properties <span>slice</span> and <span>splice</span>. slice requires the start and finish index, so that it can return a new array with the items between those indexes (it includes the starting index but not the finishing). splice also needs a start and finish index, but it removes the items from the existing array between those indexes (also includes the starting index but not the finishing) and it returns a new array with the removed items. You can also add new items after the finishing index. The new items are added from the starting index entered, forward, pushing all the other items to the right. </p>
+                    <a href="https://gist.github.com/Drakso/35d8d1d3f8956f2e49663f060542f628"><img src="icons/github.svg" alt="Gist Link"></a>
+            </div>
+            <div class="col-md-6 codeBlock">
+                <pre><code class="snip JavaScript" data-id="35d8d1d3f8956f2e49663f060542f628"></code></pre>
             </div>
         </div>
     </div>

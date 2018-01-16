@@ -1,0 +1,105 @@
+<!-- Selectors -->
+<div id="myId"> Hello </div>
+<script>
+    document.getElementById("myId");
+</script>
+
+<div class="myClass"> Hello </div>
+<script>
+    document.getElementsByClassName("myClass")[0];
+</script>
+
+<div> Hello </div>
+<script>
+    document.getElementsByTagName("div")[0];
+</script>
+
+<div id="someId" class="someClass"> Hello </div>
+<script>
+    document.querySelector("#someId");
+    document.querySelector(".someClass");
+    document.querySelector("div");
+</script>
+
+<!-- Jquery Selectors -->
+<div id="someId" class="someClass"> Hello </div>
+<script>
+    $("#someId");
+    $(".someClass");
+    $("div");
+</script>
+<!-- Event Listeners -->
+<button id="btn"> Click Me! </button>
+<script>
+    let myBtn = document.getElementById("btn");
+    myBtn.addEventListener("click", function () {
+        alert("Hello!");
+    });
+</script>
+
+<!-- Jquery Event Listneres -->
+<button id="btn"> Click Me! </button>
+<button id="btn2"> Click Me too! </button>
+<script>
+    let myBtn = $("#btn");
+    let myBtn2 = $("#btn2");
+    myBtn.click(function () {
+        alert("Hello!");
+    });
+    myBtn2.on("click", function () {
+        alert("Hello again!");
+    });
+</script>
+
+<input type="text" id="myInput">
+<script>
+    let myInput = document.getElementById("myInput");
+    myInput.addEventListener("keyup", function () {
+        alert(myInput.value);
+    });
+</script>
+
+<input type="text" placeholder="Your name" id="nameInput">
+<div id="result"></div>
+<button id="nameBtn"> Click to Greet</button>
+<script>
+    let nameInput = document.getElementById("nameInput");
+    let result = document.getElementById("result");
+    let nameBtn = docment.getElementById("nameBtn");
+    nameBtn.addEventListener("click", function () {
+        result.innerHTML = ""; // We empty the div from previous content
+        result.innerHTML = `Hello ${nameInput.value}!`; // We take the value from the input field
+    });
+</script>
+
+<div id="color">Hello</div>
+<button id="colorBtn"> Click to change color red </button>
+<script>
+    let colorDiv = document.getElementById("color");
+    let colorBtn = document.getElementById("colorBtn");
+    colorsBtn.addEventListener("click", function () {
+        colorsDiv.style.color = red;
+    });
+</script>
+
+<div id="someText">Hello good sir</div>
+<button id="btnHide">Click to hide</button>
+<style>
+    .hide {
+        display: none;
+    }
+</style>
+<script>
+    let textDiv = document.getElementById("someText");
+    let btnHide = document.getElementById("btnHide");
+    btnHide.addEventListener("click", function () {
+        let hidden = false; // switch that remembers if something is hidden or not
+        if (hidden == false) {
+            textDiv.classList.add("hide");
+            hidden = true;
+        } else {
+            textDiv.classList.remove("hide");
+            hidden = false;
+        }
+    });
+</script>

@@ -24,7 +24,7 @@ function getSnippetCode(id){ // The id of the snippet
     });
 }
 
-// function for 
+// Function for calling the gists and creating a highlight.js container
 $( document ).ready(function() { // When the Document Object Model is ready for javascript code, this function is executed
     let elements = document.getElementsByClassName("snip");
     for(let i = 0; i < elements.length; i++){
@@ -34,6 +34,7 @@ $( document ).ready(function() { // When the Document Object Model is ready for 
     }
 });
 
+// The site will load before the http requests get response. That is where async functions come in handy, making the library highlight.js wait until we get the responses
 async function waitAndSnip(element, id){
     let code = await getSnippetCode(id).then(
         function(val) {

@@ -54,15 +54,17 @@ console.log(everyResult); // false ( all elements are not larger than 100 )
 
 // Check all elements and return a new array with the ones that passed the test function
 let filterResult = myArray.filter(x => x < 10);
-console.log(filterResult); // [2, 3, 4, 5, 6, 7] ( all elements that are less than 10 are here )
+console.log(filterResult); // [2, 3, 4, 5, 6, 7, 5] ( all elements that are less than 10 are here )
+// Return the first element that passes a test function
+let findResult = myArray.find(x => x.length > 3);
+console.log(findResult); // bike (returns the first that is longer thatn 3. Numbers are skiped since they don't have the length property)
+
 // Run a function on every element in the array ( Does not result in a new array )
 let foreachResult = myArray.forEach( x => console.log(`Item: ${x}`)); // It will show every element in console with "Item:" in front of it
 // Run a function on every element and create a new array with the results
 let mapResult = myArray.map(x => x + 1);
 console.log(mapResult); // [3, 4, 5, 6, 7, 8, 101, 121, 134, 136, 6, "car1", "bike1", "tank1", "plane1"]
-// Return the first element that passes a test function
-let findResult = myArray.find(x => x.length > 3);
-console.log(findResult); // bike (returns the first that is longer thatn 3. Numbers are skiped since they don't have the length property)
+
 // Return the index of the first element that passes a test function ( returns -1 if the item is not found )
 let findIndexResult = myArray.findIndex(x => x > 6);
 console.log(findIndexResult); // 5 (the index is 5, starting from 0)
@@ -71,6 +73,7 @@ let indexOfResult = myArray.indexOf("tank");
 console.log(indexOfResult); // 13 (the index is 13, starting from 0)
 indexOfResult = myArray.indexOf("car", 13);
 console.log(indexOfResult); // -1 (was not found since it started from 13th position counting from the front)
+
 // Joins the elements of an array in to one string with a separator set as an argument of the function. If there is no argument, the default separator is ,
 let joinResult = myArray.join();
 console.log(joinResult); // 2,3,4,5,6,7,100,120,133,135,5,car,bike,tank,plane

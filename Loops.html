@@ -26,7 +26,7 @@
     <!-- Sidebar Holder -->
     <nav id="sidebar" class="active">
         <div class="sidebar-header">
-            <h3>JSWhat</h3>
+            <h3>JSWhat <a id="indexIcon" href="https://github.com/Drakso/JSWhat"><img src="icons/github.svg" alt="Gist Link"></a></h3>
         </div>
 
         <ul class="list-unstyled components">
@@ -45,16 +45,19 @@
             <li class="active">
                 <a href="Loops.html">Loops</a>
             </li>
+            <li>
+                <a href="DOM.html">Dom Manipulation</a>
+            </li>
         </ul>
 
-        <ul class="list-unstyled CTAs">
+        <!-- <ul class="list-unstyled CTAs">
             <li>
                 <a href="" class="download">About</a>
             </li>
             <li>
                 <a href="" class="download">Contact</a>
             </li>
-        </ul>
+        </ul> -->
     </nav>
 
     <div class="container">
@@ -63,65 +66,56 @@
         <h1 class="mainTitle">Loops</h1>
         <div class="d-flex align-items-center whatBlock">
             <div class="col-md-6 textBlock">
-                <p> A simple
-                    <span>if conditional</span> in javascript. It checks if the condition in the () are true and if so, it executes
-                    the code block inside the {}</p>
+                <p> Loops are used to <span>automate repetitive tasks</span>. The simplest loop is the <span>while</span> loop. For the while loop, a <span>counter</span> variable needs to be declared outside of the while block so it can remember the iterations. A condition in the <span>( )</span> is checked every iteration and if it is true, the loop continues to execute the code inside the block over and over until the condition is false</p>
+                    <a href="https://gist.github.com/Drakso/40cab3b9ac8887e5d70f58ab365f8247"><img src="icons/github.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
-                <pre><code class="snip JavaScript" data-id="3b41cf511ecf963d795568b9b15e7625"></code></pre>
+                <pre><code class="snip JavaScript" data-id="40cab3b9ac8887e5d70f58ab365f8247"></code></pre>
             </div>
         </div>
         <div class="row whatBlock">
             <div class="col-md-6 textBlock">
-                <p> A simple
-                    <span>if/else</span> conditional in javascript. If the condition in the
-                    <span>if</span> statement is not true than the block of code in
-                    <span>else</span> is executed. </p>
+                <p> A common way of using loops is for <span>traversing trough collections such as arrays</span>. Inside of a loop we can put any code that we need. An if conditional, object, function and even another loop. </p>
+                    <a href="https://gist.github.com/Drakso/f5fffb3fa092b59412ecf1711a414cf8"><img src="icons/github.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
-                <pre><code class="snip JavaScript" data-id="9673723d54eb97b17227fe3d276fd408"></code></pre>
+                <pre><code class="snip JavaScript" data-id="f5fffb3fa092b59412ecf1711a414cf8"></code></pre>
             </div>
         </div>
         <div class="row whatBlock">
             <div class="col-md-6 textBlock">
-                <p> If conditional can execute the code block if there is
-                    <span>operation</span> in the () and its true. Everything that is not true such as
-                    <span>undefined</span> or
-                    <span>null</span> executes the else code block.</p>
+                <p> The <span>for</span> loop is the most widely used loop because it is shorter than the while. It is shorter because the declaration of the counter, the condition and the incrementing of the counter is all written as arguments in <span>( )</span>  brackets.</p>
+                    <a href="https://gist.github.com/Drakso/6fdbc43303cefd37c41ffdbf1455e233"><img src="icons/github.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
-                <pre><code class="snip JavaScript" data-id="c919331b92696a1f6aebd505f6270d55"></code></pre>
+                <pre><code class="snip JavaScript" data-id="6fdbc43303cefd37c41ffdbf1455e233"></code></pre>
             </div>
         </div>
         <div class="row whatBlock">
             <div class="col-md-6 textBlock">
-                <p>
-                    <span>if/else if</span> statemets are used if there are more conditions dependent on eachother. When the first
-                    if conditional is not true it goes to the next and so on until one is true or it hits the else. Note
-                    that
-                    <span>if two if conditions are true, only the first one will execute</span> its codeblock. The others after
-                    that are skipped. </p>
+                <p>Except the declaration of the counter and the incrementing, everything else is pretty much the same with the for loop as it is with the while. For loops are more widely used because they eliminate the chance of forgetting to increment the counter and creating an <span>infinite loop</span> that can possibly slow down or even crash your browser.</p>
+                    <a href="https://gist.github.com/Drakso/cc4f3367bd72c071236e550da214ac85"><img src="icons/github.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
-                <pre><code class="snip JavaScript" data-id="1b0f4c86d9f5832927f6e2dec13a6cc9"></code></pre>
+                <pre><code class="snip JavaScript" data-id="cc4f3367bd72c071236e550da214ac85"></code></pre>
             </div>
         </div>
         <div class="row whatBlock">
             <div class="col-md-6 textBlock">
-                <p> There can be if statements inside of other if statements. </p>
+                <p> Loops usually go through all the code after every cycle and stop when the condition is not met any more. <span>Break</span> allows us to stop the execution at a certain point and to stop the loop from continuing with its iterations even if the condition in the loop is met. So when we put break, all the code below it, will not execute and the loop will stop iterating. </p>
+                <a href="https://gist.github.com/Drakso/d7d6f5b931abebf2c13cc678b91f9539"><img src="icons/github.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
-                <pre><code class="snip JavaScript" data-id="a4150db2aa5fefb47ba2f852b58a5014"></code></pre>
+                <pre><code class="snip JavaScript" data-id="d7d6f5b931abebf2c13cc678b91f9539"></code></pre>
             </div>
         </div>
         <div class="row whatBlock">
             <div class="col-md-6 textBlock">
-                <p> A
-                    <span>function</span> can also be set as a condition for an if statement. The function return value will be
-                    used as the condition.</p>
+                <p>If you want some code to be skipped in some iteration of a loop cycle, but you don’t want the loop to stop iterating than you need <span>continue</span>. When we put continue in our loop, whenever the code gets to continue it will skip all the code below it but the loop will continue with the iterations.</p>
+                    <a href="https://gist.github.com/Drakso/a1cfe9d2e4651ce4cef81841519b2b1f"><img src="icons/github.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
-                <pre><code class="snip JavaScript" data-id="cf981cecab75336cd4c8af64a6ff8286"></code></pre>
+                <pre><code class="snip JavaScript" data-id="a1cfe9d2e4651ce4cef81841519b2b1f"></code></pre>
             </div>
         </div>
     </div>
