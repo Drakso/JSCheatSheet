@@ -51,6 +51,26 @@ code {
     display: block;
 }
 /*
+    Scope Example
+*/
+.scopeG code {
+    background-color: rgba(174, 174, 255, 0.24);
+    margin: 0;
+    padding: 7px;
+    display: inline;
+}
+
+.scopeG span {
+    height: 2vh;
+    width: 5%;
+    display:inline-block
+}
+
+.hidden{
+    visibility:hidden;
+}
+
+/*
     SCROLLBAR
 */
 .snip::-webkit-scrollbar-track

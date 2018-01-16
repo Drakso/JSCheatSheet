@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>JS Tutorial [Functions]</title>
+    <title>JS Tutorial [Loops]</title>
     <meta name="author" content="name">
     <meta name="description" content="description here">
     <meta name="keywords" content="keywords,here">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
         crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="lib/highlight/styles/monokai-sublime.css" type="text/css">
+    <link rel="stylesheet" href="lib/highlight/styles/atom-one-dark.css" type="text/css">
 </head>
 
 <body>
-    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <nav class="navbar navbar-light" >
         <div class="navbar-header">
             <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
                 <img src="icons/menu.svg" alt="Menu">
@@ -26,7 +26,7 @@
     <!-- Sidebar Holder -->
     <nav id="sidebar" class="active">
         <div class="sidebar-header">
-            <h3>JSWhat</h3>
+            <h3>JSWhat <a id="indexIcon" href="https://github.com/Drakso/JSWhat"><img src="icons/github.svg" alt="Gist Link"></a></h3>
         </div>
 
         <ul class="list-unstyled components">
@@ -36,35 +36,66 @@
             <li>
                 <a href="Conditionals.html">Conditionals</a>
             </li>
-            <li class="active">
+            <li>
                 <a href="Functions.html">Functions</a>
             </li>
             <li>
                 <a href="Arrays.html">Arrays</a>
             </li>
-            <li>
+            <li class="active">
                 <a href="Loops.html">Loops</a>
+            </li>
+            <li>
+                <a href="DOM.html">Dom Manipulation</a>
             </li>
         </ul>
 
-        <ul class="list-unstyled CTAs">
+        <!-- <ul class="list-unstyled CTAs">
             <li>
                 <a href="" class="download">About</a>
             </li>
             <li>
                 <a href="" class="download">Contact</a>
             </li>
-        </ul>
+        </ul> -->
     </nav>
 
-    <!-- Page Content -->
-    <div class="wrapper">
+    <div class="container">
+        <!-- Page Content -->
+        <div class="wrapper">
         <h1 class="mainTitle">Scope and Context</h1>
-        <div class="row">
-            <div class="col-md-12">
-                <p> </p>
+        <div class="d-flex align-items-center whatBlock">
+            <div class="col-md-6 textBlock">
+                <div class="explanation">intro</div>
+            </div>
+            <div class="col-md-6 codeBlock">
+                <div id="scopeG">
+                    <span id="line0">></span><code>let a = 10;</code></br>
+                    <span id="line1">&nbsp;</span><code>let add5 = function(number1){</code></br>
+                    <div id="scopeA">
+                        <span id="line2">&nbsp;</span><code>let b = 5;</code></br>
+                        <span id="line3">&nbsp;</span><code>console.log(number1 + b);</code></br>
+                        <span id="line4">&nbsp;</span><code>let add10 = function(number2){</code></br>
+                        <div id="scopeB">
+                            <span id="line5">&nbsp;</span><code>console.log(number2 + a);</code></br>
+                            <span id="line6">&nbsp;</span><code>};</code></br>
+                        </div>
+                        <span id="line7">&nbsp;</span><code>add10(3);</code></br>
+                        <span id="line8">&nbsp;</span><code>let add15 = function(number3){</code></br>
+                        <div id="scopeB">
+                            <span id="line9">&nbsp;</span><code>let c = 15;</code></br>
+                            <span id="line10">&nbsp;</span><code>console.log(number3 + c);</code></br>
+                            <span id="line11">&nbsp;</span><code>};</code></br>
+                        </div>
+                        <span id="line12">&nbsp;</span><code>add15(3);</code></br>
+                        <span id="line13">&nbsp;</span><code>};</code></br>
+                    </div>
+                    <span id="line14"></span>&nbsp;<code>add5(3);</code></br>
+                </div>
+              <button id="btnPrevious">previous</button><button id="btnNext">next</button>
             </div>
         </div>
+    </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
