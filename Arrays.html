@@ -5,9 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>JS Tutorial [Arrays]</title>
-    <meta name="author" content="name">
-    <meta name="description" content="description here">
-    <meta name="keywords" content="keywords,here">
+    <meta name="author" content="Dragan Gelevski">
+    <meta name="description" content="Website for helping students learn JavaScript">
+    <meta name="keywords" content="javascript, js, learning, development">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
         crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" type="text/css">
@@ -20,13 +27,16 @@
             <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
                 <img src="icons/menu.svg" alt="Menu">
             </button>
+            <div id="jswhat-logo">
+                <img src="icons/jswhat-logo.svg" alt="Logo">
+            </div>     
         </div>
     </nav>
 
     <!-- Sidebar Holder -->
     <nav id="sidebar" class="active">
         <div class="sidebar-header">
-            <h3>JSWhat <a id="indexIcon" href="https://github.com/Drakso/JSWhat"><img src="icons/github.svg" alt="Gist Link"></a></h3>
+            <h3>JSWhat <a id="indexIcon" href="https://github.com/Drakso/JSWhat"><img src="icons/github-white.svg" alt="Gist Link"></a></h3>
         </div>
 
         <ul class="list-unstyled components">
@@ -49,15 +59,6 @@
                 <a href="DOM.html">Dom Manipulation</a>
             </li>
         </ul>
-
-        <!-- <ul class="list-unstyled CTAs">
-            <li>
-                <a href="" class="download">About</a>
-            </li>
-            <li>
-                <a href="" class="download">Contact</a>
-            </li>
-        </ul> -->
     </nav>
 <div class="container">
     <!-- Page Content -->
@@ -66,7 +67,7 @@
         <div class="row whatBlock">
             <div class="col-md-6 textBlock">
                 <p> An array is a collection of items. You can put variables, numbers, strings, objects and even functions. Arrays are declared with the <span>[ ]</span>  brackets. Arrays have properties that help us manipulate with them. Properties are accessed by adding a <span>.</span> next to the name of the array. The most common and useful property is the <span>lengt</span> property.  </p>
-                <a href="https://gist.github.com/Drakso/"><img src="icons/github.svg" alt="Gist Link"></a>
+                <a href="https://gist.github.com/Drakso/"><img src="icons/github-blue.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
                 <pre><code class="snip JavaScript" data-id="ba36d3b3fe5b4858e7631864e0f5e189"></code></pre>
@@ -75,7 +76,7 @@
         <div class="d-flex align-items-center whatBlock">
             <div class="col-md-6 textBlock">
                 <p> Elements are called by adding the index of the element in a <span>[ ]</span>  brackets. Element indexes are starting from 0 so the first index will always be index 0. Elements can be rewritten at any time with new data. If we skip some indexes while declaring a new element, the skipped indexes will have a value of <span> undefined </span>.</p>
-                <a href="https://gist.github.com/Drakso/8f04cb0c91b9dd27990a4795982d2519"><img src="icons/github.svg" alt="Gist Link"></a>
+                <a href="https://gist.github.com/Drakso/8f04cb0c91b9dd27990a4795982d2519"><img src="icons/github-blue.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
                 <pre><code class="snip JavaScript" data-id="8f04cb0c91b9dd27990a4795982d2519"></code></pre>
@@ -84,7 +85,7 @@
         <div class="row whatBlock">
             <div class="col-md-6 textBlock">
                 <p> Adding and removing items at the end of an array is done with the array properties <span>push</span> and <span>pop</span>. Simply type push and the item you want to add at the end of the array in <span>( )</span> brackets or pop and empty <span>( )</span> brackets to remove the last item from an array.</p>
-                    <a href="https://gist.github.com/Drakso/fba12a0cf9e876c748ba920adf03f6a2"><img src="icons/github.svg" alt="Gist Link"></a>
+                    <a href="https://gist.github.com/Drakso/fba12a0cf9e876c748ba920adf03f6a2"><img src="icons/github-blue.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
                 <pre><code class="snip JavaScript" data-id="fba12a0cf9e876c748ba920adf03f6a2"></code></pre>
@@ -93,7 +94,7 @@
         <div class="row whatBlock">
             <div class="col-md-6 textBlock">
                 <p>Adding and removing items at the start of an array is done with the array properties <span>unshift</span> and <span>shift</span>. Simply type unshift and the item you want to add at the beginning of the array in <span>( )</span> brackets or shift and empty <span>( )</span> brackets to remove the first item from an array.</p>
-                    <a href="https://gist.github.com/Drakso/e3e2fc9b1122f8ba0c82e66ae97a9335"><img src="icons/github.svg" alt="Gist Link"></a>
+                    <a href="https://gist.github.com/Drakso/e3e2fc9b1122f8ba0c82e66ae97a9335"><img src="icons/github-blue.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
                 <pre><code class="snip JavaScript" data-id="e3e2fc9b1122f8ba0c82e66ae97a9335"></code></pre>
@@ -102,7 +103,7 @@
         <div class="row whatBlock">
             <div class="col-md-6 textBlock">
                 <p> Filtering an array is done with the array properties <span>filter</span> and <span>find</span>. Both of them check the items in the array by a criteria added in a <span>callback function</span> in ( ) brackets. Find returns all the items that passed the criteria in a new array, while find only returns the first item that meets the criteria and does not check the rest.  </p>
-                <a href="https://gist.github.com/Drakso/0499e9ccf5c1e62dce050b675097f35d"><img src="icons/github.svg" alt="Gist Link"></a>
+                <a href="https://gist.github.com/Drakso/0499e9ccf5c1e62dce050b675097f35d"><img src="icons/github-blue.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
                 <pre><code class="snip JavaScript" data-id="0499e9ccf5c1e62dce050b675097f35d"></code></pre>
@@ -111,7 +112,7 @@
         <div class="row whatBlock">
             <div class="col-md-6 textBlock">
                 <p> Running a particular function for every element is also possible with the <span>forEach</span> and <span>map</span> method. forEach runs a function using every element and does not return a new array as a result. map on the other hand runs a function on every element and returns a new array with the altered elements by the function.</p>
-                    <a href="https://gist.github.com/Drakso/c465e2f26427a1af0c80e63a3bb4054f"><img src="icons/github.svg" alt="Gist Link"></a>
+                    <a href="https://gist.github.com/Drakso/c465e2f26427a1af0c80e63a3bb4054f"><img src="icons/github-blue.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
                 <pre><code class="snip JavaScript" data-id="c465e2f26427a1af0c80e63a3bb4054f"></code></pre>
@@ -120,7 +121,7 @@
         <div class="row whatBlock">
             <div class="col-md-6 textBlock">
                 <p> Finding indexes of certain items can be achieved with the array properties<span> findIndex</span> and <span>indexOf</span>. findIndex needs a callback function to test the items in the array. As soon as it finds an item that passes the criteria it stops and returns its index. indexOf needs an item so it can match it with the elements in the array. When it finds a match it stops and returns the index. A second argument can be passed, a number, which represents the starting point of the search for a match.</p>
-                    <a href="https://gist.github.com/Drakso/1014f76226bf801b526b14edebbb6cf5"><img src="icons/github.svg" alt="Gist Link"></a>
+                    <a href="https://gist.github.com/Drakso/1014f76226bf801b526b14edebbb6cf5"><img src="icons/github-blue.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
                 <pre><code class="snip JavaScript" data-id="1014f76226bf801b526b14edebbb6cf5"></code></pre>
@@ -129,7 +130,7 @@
         <div class="row whatBlock">
             <div class="col-md-6 textBlock">
                 <p> An array property called <span>join</span> is used if there is a need for an array to be converted in to a string of its elements. If an argument is passed to the join property, that character or string will be the separator between the elements in the string. Default is <span>,</span>. Reversing an array is also possible with the array property <span>reverse</span>, which reverses the elements in the array (Reverses the array, does not create a new array with reverse items). </p>
-                    <a href="https://gist.github.com/Drakso/bf6917f02d35fd9627c7653d26838f65"><img src="icons/github.svg" alt="Gist Link"></a>
+                    <a href="https://gist.github.com/Drakso/bf6917f02d35fd9627c7653d26838f65"><img src="icons/github-blue.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
                 <pre><code class="snip JavaScript" data-id="bf6917f02d35fd9627c7653d26838f65"></code></pre>
@@ -138,7 +139,7 @@
         <div class="row whatBlock">
             <div class="col-md-6 textBlock">
                 <p> Selecting a range of items from an array is done with the array properties <span>slice</span> and <span>splice</span>. slice requires the start and finish index, so that it can return a new array with the items between those indexes (it includes the starting index but not the finishing). splice also needs a start and finish index, but it removes the items from the existing array between those indexes (also includes the starting index but not the finishing) and it returns a new array with the removed items. You can also add new items after the finishing index. The new items are added from the starting index entered, forward, pushing all the other items to the right. </p>
-                    <a href="https://gist.github.com/Drakso/35d8d1d3f8956f2e49663f060542f628"><img src="icons/github.svg" alt="Gist Link"></a>
+                    <a href="https://gist.github.com/Drakso/35d8d1d3f8956f2e49663f060542f628"><img src="icons/github-blue.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
                 <pre><code class="snip JavaScript" data-id="35d8d1d3f8956f2e49663f060542f628"></code></pre>

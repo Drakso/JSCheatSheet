@@ -5,9 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>JS Tutorial [Dom]</title>
-    <meta name="author" content="name">
-    <meta name="description" content="description here">
-    <meta name="keywords" content="keywords,here">
+    <meta name="author" content="Dragan Gelevski">
+    <meta name="description" content="Website for helping students learn JavaScript">
+    <meta name="keywords" content="javascript, js, learning, development">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
         crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" type="text/css">
@@ -20,13 +27,16 @@
             <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
                 <img src="icons/menu.svg" alt="Menu">
             </button>
+            <div id="jswhat-logo">
+                <img src="icons/jswhat-logo.svg" alt="Logo">
+            </div>     
         </div>
     </nav>
 
     <!-- Sidebar Holder -->
     <nav id="sidebar" class="active">
         <div class="sidebar-header">
-            <h3>JSWhat <a id="indexIcon" href="https://github.com/Drakso/JSWhat"><img src="icons/github.svg" alt="Gist Link"></a></h3>
+            <h3>JSWhat <a id="indexIcon" href="https://github.com/Drakso/JSWhat"><img src="icons/github-white.svg" alt="Gist Link"></a></h3>
         </div>
 
         <ul class="list-unstyled components">
@@ -49,15 +59,6 @@
                 <a href="DOM.html">Dom Manipulation</a>
             </li>
         </ul>
-
-        <!-- <ul class="list-unstyled CTAs">
-            <li>
-                <a href="" class="download">About</a>
-            </li>
-            <li>
-                <a href="" class="download">Contact</a>
-            </li>
-        </ul> -->
     </nav>
 
     <div class="container">
@@ -68,7 +69,7 @@
                 <div class="col-md-6 textBlock">
                     <p> <span>Selectors</span> are a very important part in javascript. They connect our javascript code with the HTML elements. The most commonly used selectors are by <span>id</span>, <span>class</span> and <span>tag name</span>. The selector by id returns an element while the selectors by class and tag name return collection of elements so you have to treat it like an array and use loops to find a certain element or change them all.</p>
                     <a href="https://gist.github.com/Drakso/f2e219bb9390b00713f360ffd9692d23">
-                        <img src="icons/github.svg" alt="Gist Link">
+                        <img src="icons/github-blue.svg" alt="Gist Link">
                     </a>
                 </div>
                 <div class="col-md-6 codeBlock">
@@ -79,7 +80,7 @@
                 <div class="col-md-6 textBlock">
                     <p> <span>Query selectors</span> are introduced later than the id, class and tag name selectors. They can select any element just like the css selectors. <span>.</span> is for classes, <span>#</span> is for id and you type the <span>name of the html tag</span> if you want to select a tag name. JQuery selectors work in a similar way. </p>
                     <a href="https://gist.github.com/Drakso/cc1120da9f6b65453f8ae0da57406ce4">
-                        <img src="icons/github.svg" alt="Gist Link">
+                        <img src="icons/github-blue.svg" alt="Gist Link">
                     </a>
                 </div>
                 <div class="col-md-6 codeBlock">
@@ -90,7 +91,7 @@
                 <div class="col-md-6 textBlock">
                     <p> An <span>event listener</span> waits for the user to interact in some way with an element or object and executes some code as a result of that. In the example, by clicking the button an event is trigerd on the click and an alert is shown on the screen. </p>
                     <a href="https://gist.github.com/Drakso/a66fb42e0ece088a9ab3f7cec782b4de">
-                        <img src="icons/github.svg" alt="Gist Link">
+                        <img src="icons/github-blue.svg" alt="Gist Link">
                     </a>
                 </div>
                 <div class="col-md-6 codeBlock">
@@ -101,7 +102,7 @@
                 <div class="col-md-6 textBlock">
                     <p> <span>JQuery event listeners</span> do the same function as the pure javascript one. There are two types of jquery event listeners. The difference between the two is only in the conventions. </p>
                     <a href="https://gist.github.com/Drakso/5a25fb20e917e761faa9079a94633f83">
-                        <img src="icons/github.svg" alt="Gist Link">
+                        <img src="icons/github-blue.svg" alt="Gist Link">
                     </a>
                 </div>
                 <div class="col-md-6 codeBlock">
@@ -112,7 +113,7 @@
                 <div class="col-md-6 textBlock">
                     <p> With the selectors, we can read value from elements such as the input element and use that value in our code. We use the element object property <span>.value</span>. </p>
                     <a href="https://gist.github.com/Drakso/469cc800eeee91ca19fbdd0a49bcb86e">
-                        <img src="icons/github.svg" alt="Gist Link">
+                        <img src="icons/github-blue.svg" alt="Gist Link">
                     </a>
                 </div>
                 <div class="col-md-6 codeBlock">
@@ -123,7 +124,7 @@
                 <div class="col-md-6 textBlock">
                     <p> An important way of manipulation the DOM is by changing the contents of elements. This is done with the element object property <span>.innerHTML</span>. To clear an element just set the .innerHTML to an empty string "". </p>
                     <a href="https://gist.github.com/Drakso/62c6b1e74cab996889218fc7585341bf">
-                        <img src="icons/github.svg" alt="Gist Link">
+                        <img src="icons/github-blue.svg" alt="Gist Link">
                     </a>
                 </div>
                 <div class="col-md-6 codeBlock">
@@ -134,7 +135,7 @@
                 <div class="col-md-6 textBlock">
                     <p> Css style can also be changed through javascript. All you have to do is select an element and access that element object property <span>.style</span> like in the example. </p>
                     <a href="https://gist.github.com/Drakso/128a3ce3e10d263d2beaec07bcec0996">
-                        <img src="icons/github.svg" alt="Gist Link">
+                        <img src="icons/github-blue.svg" alt="Gist Link">
                     </a>
                 </div>
                 <div class="col-md-6 codeBlock">
@@ -145,7 +146,7 @@
                 <div class="col-md-6 textBlock">
                     <p> Adding or removing css classes from elements is also possible. The element object property <span>.classList</span> with the properties <span>.add</span> and <span>.remove</span> can add or remove element css classes. This is usefull for hiding elements at will, like the example shows. </p>
                     <a href="https://gist.github.com/Drakso/e0f4dd5fe19a29b0ea0931ce2ac2ba4f">
-                        <img src="icons/github.svg" alt="Gist Link">
+                        <img src="icons/github-blue.svg" alt="Gist Link">
                     </a>
                 </div>
                 <div class="col-md-6 codeBlock">

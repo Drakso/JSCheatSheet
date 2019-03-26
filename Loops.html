@@ -5,9 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>JS Tutorial [Loops]</title>
-    <meta name="author" content="name">
-    <meta name="description" content="description here">
-    <meta name="keywords" content="keywords,here">
+    <meta name="author" content="Dragan Gelevski">
+    <meta name="description" content="Website for helping students learn JavaScript">
+    <meta name="keywords" content="javascript, js, learning, development">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
         crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" type="text/css">
@@ -20,13 +27,16 @@
             <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
                 <img src="icons/menu.svg" alt="Menu">
             </button>
+            <div id="jswhat-logo">
+                <img src="icons/jswhat-logo.svg" alt="Logo">
+            </div>     
         </div>
     </nav>
 
     <!-- Sidebar Holder -->
     <nav id="sidebar" class="active">
         <div class="sidebar-header">
-            <h3>JSWhat <a id="indexIcon" href="https://github.com/Drakso/JSWhat"><img src="icons/github.svg" alt="Gist Link"></a></h3>
+            <h3>JSWhat <a id="indexIcon" href="https://github.com/Drakso/JSWhat"><img src="icons/github-white.svg" alt="Gist Link"></a></h3>
         </div>
 
         <ul class="list-unstyled components">
@@ -49,15 +59,6 @@
                 <a href="DOM.html">Dom Manipulation</a>
             </li>
         </ul>
-
-        <!-- <ul class="list-unstyled CTAs">
-            <li>
-                <a href="" class="download">About</a>
-            </li>
-            <li>
-                <a href="" class="download">Contact</a>
-            </li>
-        </ul> -->
     </nav>
 
     <div class="container">
@@ -67,7 +68,7 @@
         <div class="d-flex align-items-center whatBlock">
             <div class="col-md-6 textBlock">
                 <p> Loops are used to <span>automate repetitive tasks</span>. The simplest loop is the <span>while</span> loop. For the while loop, a <span>counter</span> variable needs to be declared outside of the while block so it can remember the iterations. A condition in the <span>( )</span> is checked every iteration and if it is true, the loop continues to execute the code inside the block over and over until the condition is false</p>
-                    <a href="https://gist.github.com/Drakso/40cab3b9ac8887e5d70f58ab365f8247"><img src="icons/github.svg" alt="Gist Link"></a>
+                    <a href="https://gist.github.com/Drakso/40cab3b9ac8887e5d70f58ab365f8247"><img src="icons/github-blue.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
                 <pre><code class="snip JavaScript" data-id="40cab3b9ac8887e5d70f58ab365f8247"></code></pre>
@@ -76,7 +77,7 @@
         <div class="row whatBlock">
             <div class="col-md-6 textBlock">
                 <p> A common way of using loops is for <span>traversing trough collections such as arrays</span>. Inside of a loop we can put any code that we need. An if conditional, object, function and even another loop. </p>
-                    <a href="https://gist.github.com/Drakso/f5fffb3fa092b59412ecf1711a414cf8"><img src="icons/github.svg" alt="Gist Link"></a>
+                    <a href="https://gist.github.com/Drakso/f5fffb3fa092b59412ecf1711a414cf8"><img src="icons/github-blue.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
                 <pre><code class="snip JavaScript" data-id="f5fffb3fa092b59412ecf1711a414cf8"></code></pre>
@@ -85,7 +86,7 @@
         <div class="row whatBlock">
             <div class="col-md-6 textBlock">
                 <p> The <span>for</span> loop is the most widely used loop because it is shorter than the while. It is shorter because the declaration of the counter, the condition and the incrementing of the counter is all written as arguments in <span>( )</span>  brackets.</p>
-                    <a href="https://gist.github.com/Drakso/6fdbc43303cefd37c41ffdbf1455e233"><img src="icons/github.svg" alt="Gist Link"></a>
+                    <a href="https://gist.github.com/Drakso/6fdbc43303cefd37c41ffdbf1455e233"><img src="icons/github-blue.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
                 <pre><code class="snip JavaScript" data-id="6fdbc43303cefd37c41ffdbf1455e233"></code></pre>
@@ -94,7 +95,7 @@
         <div class="row whatBlock">
             <div class="col-md-6 textBlock">
                 <p>Except the declaration of the counter and the incrementing, everything else is pretty much the same with the for loop as it is with the while. For loops are more widely used because they eliminate the chance of forgetting to increment the counter and creating an <span>infinite loop</span> that can possibly slow down or even crash your browser.</p>
-                    <a href="https://gist.github.com/Drakso/cc4f3367bd72c071236e550da214ac85"><img src="icons/github.svg" alt="Gist Link"></a>
+                    <a href="https://gist.github.com/Drakso/cc4f3367bd72c071236e550da214ac85"><img src="icons/github-blue.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
                 <pre><code class="snip JavaScript" data-id="cc4f3367bd72c071236e550da214ac85"></code></pre>
@@ -103,7 +104,7 @@
         <div class="row whatBlock">
             <div class="col-md-6 textBlock">
                 <p> Loops usually go through all the code after every cycle and stop when the condition is not met any more. <span>Break</span> allows us to stop the execution at a certain point and to stop the loop from continuing with its iterations even if the condition in the loop is met. So when we put break, all the code below it, will not execute and the loop will stop iterating. </p>
-                <a href="https://gist.github.com/Drakso/d7d6f5b931abebf2c13cc678b91f9539"><img src="icons/github.svg" alt="Gist Link"></a>
+                <a href="https://gist.github.com/Drakso/d7d6f5b931abebf2c13cc678b91f9539"><img src="icons/github-blue.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
                 <pre><code class="snip JavaScript" data-id="d7d6f5b931abebf2c13cc678b91f9539"></code></pre>
@@ -112,7 +113,7 @@
         <div class="row whatBlock">
             <div class="col-md-6 textBlock">
                 <p>If you want some code to be skipped in some iteration of a loop cycle, but you don’t want the loop to stop iterating than you need <span>continue</span>. When we put continue in our loop, whenever the code gets to continue it will skip all the code below it but the loop will continue with the iterations.</p>
-                    <a href="https://gist.github.com/Drakso/a1cfe9d2e4651ce4cef81841519b2b1f"><img src="icons/github.svg" alt="Gist Link"></a>
+                    <a href="https://gist.github.com/Drakso/a1cfe9d2e4651ce4cef81841519b2b1f"><img src="icons/github-blue.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
                 <pre><code class="snip JavaScript" data-id="a1cfe9d2e4651ce4cef81841519b2b1f"></code></pre>

@@ -5,9 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>JS Tutorial [Functions]</title>
-    <meta name="author" content="name">
-    <meta name="description" content="description here">
-    <meta name="keywords" content="keywords,here">
+    <meta name="author" content="Dragan Gelevski">
+    <meta name="description" content="Website for helping students learn JavaScript">
+    <meta name="keywords" content="javascript, js, learning, development">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
         crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" type="text/css">
@@ -18,15 +25,18 @@
     <nav class="navbar navbar-light">
         <div class="navbar-header">
             <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
-                <img src="icons/menu.svg" alt="Menu">
+                <img src="icons/menu.svg" alt="Menu" class="logo-white">
             </button>
+            <div id="jswhat-logo">
+                <img src="icons/jswhat-logo.svg" alt="Logo">
+            </div>     
         </div>
     </nav>
 
     <!-- Sidebar Holder -->
     <nav id="sidebar" class="active">
         <div class="sidebar-header">
-            <h3>JSWhat <a id="indexIcon" href="https://github.com/Drakso/JSWhat"><img src="icons/github.svg" alt="Gist Link"></a></h3>
+            <h3>JSWhat <a id="indexIcon" href="https://github.com/Drakso/JSWhat"><img src="icons/github-white.svg" alt="Gist Link"></a></h3>
         </div>
 
         <ul class="list-unstyled components">
@@ -49,15 +59,6 @@
                 <a href="DOM.html">Dom Manipulation</a>
             </li>
         </ul>
-
-        <!-- <ul class="list-unstyled CTAs">
-            <li>
-                <a href="" class="download">About</a>
-            </li>
-            <li>
-                <a href="" class="download">Contact</a>
-            </li>
-        </ul> -->
     </nav>
 
     <div class="container">
@@ -72,7 +73,7 @@
                     on their own but they
                     <span> must have a name</span>
                 </p>
-                <a href="https://gist.github.com/Drakso/865c274e824b42b8e63a1eb6bde6a95a"><img src="icons/github.svg" alt="Gist Link"></a>
+                <a href="https://gist.github.com/Drakso/865c274e824b42b8e63a1eb6bde6a95a"><img src="icons/github-blue.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
                 <pre><code class="snip JavaScript" data-id="865c274e824b42b8e63a1eb6bde6a95a"></code></pre>
@@ -84,7 +85,7 @@
                     <span>Functuon expressions</span> are used when function is needed on the spot. They can't be created on their
                     own and don't need to be named. A workaround for
                     <span>creating a function expression on its own</span> is to wrap it with () </p>
-                    <a href="https://gist.github.com/Drakso/9696aa4c8ce90bcce33dd1d36096e7e0"><img src="icons/github.svg" alt="Gist Link"></a>
+                    <a href="https://gist.github.com/Drakso/9696aa4c8ce90bcce33dd1d36096e7e0"><img src="icons/github-blue.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
                 <pre><code class="snip JavaScript" data-id="9696aa4c8ce90bcce33dd1d36096e7e0"></code></pre>
@@ -95,7 +96,7 @@
                 <p>
                     <span>Arrow functions</span> are replacement for function expressions in ES6. They are simpler and easier to
                     use. </p>
-                    <a href="https://gist.github.com/Drakso/ffe5274dfc6045046272fc99d441985f"><img src="icons/github.svg" alt="Gist Link"></a>
+                    <a href="https://gist.github.com/Drakso/ffe5274dfc6045046272fc99d441985f"><img src="icons/github-blue.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
                 <pre><code class="snip JavaScript" data-id="ffe5274dfc6045046272fc99d441985f"></code></pre>
@@ -106,7 +107,7 @@
                 <p>
                     <span>Functions</span> can be passed
                     <span>as function arguments</span>. The function passed as argument function is executed first. </p>
-                    <a href="https://gist.github.com/Drakso/9342ec28d13fda05d3c6037626c3758f"><img src="icons/github.svg" alt="Gist Link"></a>
+                    <a href="https://gist.github.com/Drakso/9342ec28d13fda05d3c6037626c3758f"><img src="icons/github-blue.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
                 <pre><code class="snip JavaScript" data-id="9342ec28d13fda05d3c6037626c3758f"></code></pre>
@@ -119,7 +120,7 @@
                     of a function, it will take the default value for that parameter if it is set. If default value is not
                     set, the value of a parameter with no argument is set to
                     <span>undefined</span>. </p>
-                    <a href="https://gist.github.com/Drakso/0fb5332d40d56187d1fa54383d92d28e"><img src="icons/github.svg" alt="Gist Link"></a>
+                    <a href="https://gist.github.com/Drakso/0fb5332d40d56187d1fa54383d92d28e"><img src="icons/github-blue.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
                 <pre><code class="snip JavaScript" data-id="0fb5332d40d56187d1fa54383d92d28e"></code></pre>
@@ -132,7 +133,7 @@
                     they can easily get into an
                     <span>infinite loop</span>, forever calling eachother which can result in the browser crashing or the page
                     not loading. </p>
-                    <a href="https://gist.github.com/Drakso/405cf886c1b40f6e6c768546f4cb6ca7"><img src="icons/github.svg" alt="Gist Link"></a>
+                    <a href="https://gist.github.com/Drakso/405cf886c1b40f6e6c768546f4cb6ca7"><img src="icons/github-blue.svg" alt="Gist Link"></a>
             </div>
             <div class="col-md-6 codeBlock">
                 <pre><code class="snip JavaScript" data-id="405cf886c1b40f6e6c768546f4cb6ca7"></code></pre>
